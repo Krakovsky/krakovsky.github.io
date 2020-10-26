@@ -1,11 +1,14 @@
 // colors
-$white: #fbf9f9;
-$cyan: #28828a;
-$grey: #aaa9a9;
+$white: #fdfdfd;
+$whiteGrey: #f6f6f6;
+$grey: #aaa;
+$greyBlack: #666666;
+$black: #2e2c2f;
+$green: #54ca95;
 
 //fonts
-$fontName: "Arial", sans-serif;
-$bold: 700;
+$fontName: "Poppins", sans-serif;
+$bold: 600;
 $medium: 500;
 
 //media
@@ -15,4 +18,4 @@ $ipad-pro: 1024px;
 $laptop: 1199px;
 
 //other
-$transition: all 0.35s ease;
+$ease: all 0.35s ease;

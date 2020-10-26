@@ -1,26 +1,7 @@
-@import "slick";
-@import "slick-theme";
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import "reset";
 @import "variables";
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  outline: none;
-}
-
-body {
-  font-family: $fontName;
-  color: $white;
-  font-style: normal;
-  font-weight: normal;
-  min-width: 320px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+@import "index";
 @import "header";
 @import "footer";
 @import "media";

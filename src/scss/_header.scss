@@ -1,53 +1,51 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
   width: 100%;
-  background-color: $cyan;
-  padding: 20px 15px;
 
-  &__language {
-    margin: 0 45px 0 67px;
+  &__logo {
+    color: $black;
+    font-size: 22px;
     display: flex;
     align-items: center;
 
-    button {
-      font-weight: bold;
+    span {
+      font-weight: $bold;
+      margin-right: 6px;
+    }
+
+    &-letter {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background-color: $green;
+      margin-right: 10px;
       color: $white;
-      font-size: 27px;
-      padding: 0;
-      border: none;
-      background-color: transparent;
-
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-      }
-    }
-
-    div {
-      margin: 0 12px;
+      text-align: center;
+      line-height: 43px;
+      font-size: 30px;
+      font-weight: $bold;
     }
   }
 
-  &__menu {
-    display: flex;
-
-    li {
-      margin-right: 46px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  &__link,
-  &__login {
-    font-weight: bold;
-    color: $white;
-    font-size: 27px;
+  &__item {
     text-decoration: none;
+    color: $black;
+    margin-right: 45px;
+    transition: $ease;
+    padding: 4px 0;
+    opacity: 0.55;
 
     &:hover {
-      text-decoration: underline;
+      opacity: 1;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
