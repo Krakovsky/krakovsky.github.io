@@ -6,6 +6,13 @@
   position: fixed;
   top: 0;
   width: 100%;
+  transition: $ease;
+  z-index: 2;
+
+  &.scrolled {
+    background-color: $white;
+    box-shadow: 0 -3px 12px 0 rgba(0, 0, 0, 0.12);
+  }
 
   &__logo {
     color: $black;
@@ -32,20 +39,31 @@
     }
   }
 
+  &__items {
+    display: flex;
+
+    li {
+      margin-right: 45px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
   &__item {
     text-decoration: none;
     color: $black;
-    margin-right: 45px;
     transition: $ease;
     padding: 4px 0;
     opacity: 0.55;
 
-    &:hover {
+    &.active {
       opacity: 1;
     }
 
-    &:last-child {
-      margin-right: 0;
+    &:hover {
+      opacity: 1;
     }
   }
 }

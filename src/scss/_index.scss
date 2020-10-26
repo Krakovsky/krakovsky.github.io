@@ -11,6 +11,7 @@ body {
   background-color: $white;
   font-style: normal;
   font-weight: normal;
+  scroll-behavior: smooth;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,6 +59,10 @@ h1 {
   &--spc-btw {
     justify-content: space-between;
   }
+
+  &--column {
+    flex-direction: column;
+  }
 }
 
 .icon {
@@ -83,7 +88,7 @@ h1 {
 }
 
 .main {
-  padding: 180px 0 250px;
+  padding: 180px 0 220px;
 }
 
 .summary {
@@ -94,8 +99,8 @@ h1 {
     display: flex;
     align-items: center;
 
-    a:first-child {
-      margin-right: 20px;
+    a:nth-child(2) {
+      margin: 0 20px;
     }
   }
 
@@ -109,6 +114,26 @@ h1 {
     line-height: 1.75em;
     color: $greyBlack;
     margin-bottom: 25px;
+  }
+}
+
+.rate {
+  display: flex;
+
+  &__item {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $lightGrey;
+    margin-right: 3px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--filled {
+      background-color: $green;
+    }
   }
 }
 

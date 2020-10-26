@@ -38,6 +38,7 @@
 		"webpack-dev-server": "^3.7.2"
 	},
 	"dependencies": {
+		"active-menu-link": "^1.1.8",
 		"jquery": "^3.4.1",
 		"tilt.js": "^1.2.1"
 	}
