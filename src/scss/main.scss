@@ -1,0 +1,26 @@
+@import "slick";
+@import "slick-theme";
+
+@import "reset";
+@import "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: $fontName;
+  color: $white;
+  font-style: normal;
+  font-weight: normal;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import "header";
+@import "footer";
+@import "media";

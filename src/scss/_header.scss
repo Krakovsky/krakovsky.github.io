@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  background-color: $cyan;
+  padding: 20px 15px;
+
+  &__language {
+    margin: 0 45px 0 67px;
+    display: flex;
+    align-items: center;
+
+    button {
+      font-weight: bold;
+      color: $white;
+      font-size: 27px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    div {
+      margin: 0 12px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+
+    li {
+      margin-right: 46px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link,
+  &__login {
+    font-weight: bold;
+    color: $white;
+    font-size: 27px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

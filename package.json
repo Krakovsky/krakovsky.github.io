@@ -1,0 +1,43 @@
+{
+	"name": "landing",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"server": "node server.js",
+		"build": "webpack --mode production",
+		"dev": "webpack-dev-server --watch --open --port 9000 --content-base /build --mode development"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 3 version"
+	],
+	"author": "Alexandr Krakovsky",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"autoprefixer": "^9.6.1",
+		"babel-loader": "^8.0.6",
+		"copy-webpack-plugin": "^5.0.4",
+		"css-loader": "^3.2.0",
+		"css-mqpacker": "^7.0.0",
+		"cssnano": "^4.1.10",
+		"file-loader": "^4.2.0",
+		"html-webpack-plugin": "^3.2.0",
+		"mini-css-extract-plugin": "^0.8.0",
+		"node-sass": "^4.12.0",
+		"path": "^0.12.7",
+		"postcss-loader": "^3.0.0",
+		"pug": "^2.0.4",
+		"pug-loader": "^2.4.0",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^1.0.0",
+		"uglifyjs-webpack-plugin": "^2.2.0",
+		"webpack": "^4.39.1",
+		"webpack-cli": "^3.3.6",
+		"webpack-dev-server": "^3.7.2"
+	},
+	"dependencies": {
+		"jquery": "^3.4.1"
+	}
+}
