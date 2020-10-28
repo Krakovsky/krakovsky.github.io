@@ -1,0 +1,62 @@
+.experience {
+  margin-bottom: 80px;
+
+  &__item {
+    display: flex;
+    padding-left: 50px;
+    position: relative;
+    max-width: 850px;
+    margin: auto;
+
+    &::after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background-color: $green;
+      position: absolute;
+      left: 12px;
+    }
+
+    &::before {
+      content: "";
+      height: 20px;
+      box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.12);
+      width: 20px;
+      background-color: $white;
+      border: 5px solid $green;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      border-radius: 50%;
+      left: 3px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.75em;
+    color: $grey;
+    margin-bottom: 40px;
+
+    &--no-mbt {
+      margin-bottom: 0;
+    }
+  }
+
+  &__years {
+    margin-right: 30px;
+    font-weight: $bold;
+    flex: 1 0 auto;
+    min-width: 235px;
+  }
+
+  &__position {
+    font-weight: $bold;
+    margin-bottom: 10px;
+  }
+
+  &__company {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}

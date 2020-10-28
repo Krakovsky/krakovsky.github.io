@@ -1,0 +1,73 @@
+.contacts {
+  margin-bottom: 60px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__hobbies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__me {
+    box-shadow: 0 0px 27px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px 20px 0;
+    margin-right: 40px;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__hobby {
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 30px;
+
+    &-icon {
+      margin-bottom: 10px;
+
+      img {
+        width: 54px;
+        height: 54px;
+      }
+    }
+  }
+
+  &__value {
+    font-size: 18px;
+    color: $blue;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__items {
+    display: flex;
+    max-width: 850px;
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 15px;
+
+    img {
+      display: block;
+      width: 34px;
+      height: 34px;
+    }
+  }
+}

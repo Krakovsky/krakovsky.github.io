@@ -40,6 +40,7 @@
 	"dependencies": {
 		"active-menu-link": "^1.1.8",
 		"jquery": "^3.4.1",
+		"scrollreveal": "^4.0.7",
 		"tilt.js": "^1.2.1"
 	}
 }
